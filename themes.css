@@ -1,0 +1,48 @@
+h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+}
+
+h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: 26px;
+}
+
+img{
+    border-radius: 25px;
+    max-width: 100%;
+    height: auto;
+}
+
+.menu li{
+    display: inline;
+    float: right;
+}
+
+.button{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #808080;
+    padding: 8px; 
+    text-decoration: none;
+}
+
+.title{
+    position: relative;
+    left: 300px;
+}
+
+.about{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    position: relative;
+    display: block;
+    left: 300px;
+    width: 500px;
+}
+
+.picture1{
+    position: absolute;
+    top: 80px; 
+    left: 900px;
+}
