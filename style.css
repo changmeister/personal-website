@@ -1,6 +1,6 @@
 h1{
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-size: 36px;
 }
 
 body{
@@ -16,8 +16,16 @@ nav{
     font-size: 24px;
 }
 
+.vert-center{
+    vertical-align: middle;
+}
+
+.center-text{
+    text-align: center;
+}
+
 .home{
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .home a{
@@ -34,7 +42,7 @@ nav{
 .nav-links a{
     text-decoration: none;
     color: black;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .nav-links li{
@@ -49,7 +57,7 @@ nav{
 
 .button{
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     color: #808080;
     padding: 8px; 
     text-decoration: none;
@@ -91,13 +99,13 @@ nav{
 
 .subtitle{
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
 }
 
 .about{
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     position: relative;
     display: block;
     margin: 0 auto;
