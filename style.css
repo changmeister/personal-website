@@ -67,6 +67,28 @@ nav{
     text-align: center; 
 }
 
+.typewriter{
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 4.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #007bb5; }
+  }
+
 .subtitle{
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
@@ -80,6 +102,16 @@ nav{
     display: block;
     margin: 0 auto;
     width: 800px;
+}
+
+.about a{
+    text-decoration: none;
+    color: #007bb5;
+    border-bottom: 1px solid #DCDCDC;
+}
+
+.about a:hover{
+    border-bottom: 1px solid #007bb5;
 }
 
 .social-menu li{
@@ -134,4 +166,3 @@ nav{
 .social-menu ul li:nth-child(3) a:hover{
     background-color: #9932CC;
 }
-
