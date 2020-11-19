@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 h1{
     font-family: 'Poppins', sans-serif;
     font-size: 36px;
@@ -20,18 +25,13 @@ nav{
     text-align: center;
 }
 
-.home{
+.logo{
     font-size: 20px;
-}
-
-.home a{
-    text-decoration: none;
-    color: black;
 }
 
 .nav-links{
     display: flex;
-    width: 15%;
+    width: 30%;
     justify-content: space-around;
 }
 
@@ -50,6 +50,19 @@ nav{
     justify-content: space-around;
     width: 45%;
 }
+
+.burger{
+    display: none;
+}
+
+/* .burger is for mobile view */
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin : 5px;
+}
+
 
 .button{
     font-family: 'Poppins', sans-serif;
@@ -125,7 +138,7 @@ nav{
 
 .social-menu ul{
     position: fixed;
-    bottom: 0%;
+    bottom: 0px;
     left: 50%;
     padding: 0;
     transform: translate(-50%, -50%);
@@ -169,4 +182,50 @@ nav{
 
 .social-menu ul li:nth-child(3) a:hover{
     background-color: #9932CC;
+}
+
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
