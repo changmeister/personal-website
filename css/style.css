@@ -10,6 +10,10 @@ h1{
     font-size: 36px;
 }
 
+h2{
+    font-family: 'Poppins', sans-serif;
+}
+
 body{
     /*background: #b9e1f8;*/
     background: #A8D0E6;
@@ -81,7 +85,6 @@ nav{
     margin : 5px;
 }
 
-
 .button{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -146,6 +149,32 @@ nav{
 }
 
 .about a:hover{
+    /* border-bottom: 1px solid #007bb5;*/
+    border-bottom: 1px solid #374785;
+}
+
+.project-entry{
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2em;
+}
+
+.project-entry p{
+    font-size: 16px;
+}
+
+.project-tags{
+    font-size: 14px;
+    padding-bottom: 10px;
+    color: #F76C6C;
+}
+
+.project-entry a{
+    text-decoration: none;
+    color: #007bb5;
+    border-bottom: 1px solid #DCDCDC;
+}
+
+.project-entry a:hover{
     /* border-bottom: 1px solid #007bb5;*/
     border-bottom: 1px solid #374785;
 }
