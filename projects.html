@@ -7,6 +7,31 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- JavaScript code for Image Slideshow -->
+        <script>
+            var i = 0; 
+            var images = [];
+            var time = 5000;
+
+            // Image List
+            images[0] = 'images/dj183_1.png';
+            images[1] = 'images/dj183_2.png';
+            images[2] = 'images/dj183_3.png';
+
+            // Changes Image
+            function changeImg(){
+                document.slide.src = images[i];
+                if(i < images.length - 1){
+                    ++i;
+                } else{
+                    i = 0;
+                }
+            
+            setTimeout("changeImg()", time);
+            }
+
+            window.onload = changeImg;
+        </script>
     </head>
     <body>
         <nav>
@@ -43,7 +68,20 @@
             </div>
             <div class = "project-entry">
                 <h2>DJ 183</h2>
-                <p class = "project-tags">Python, Flask , HTML/CSS | December 2018 </p>
+                <p class = "project-tags">Python, Flask , HTML/CSS | December 2018 </p> 
+                <img name = "slide" class = "img-center" width = "600" height = "400">
+                <p></p>
+            </div>
+        </div>
+        <div class = "footer">
+            <div class = "footer-description">
+                <p>This site is hosted by GitHub Pages.</p>
+                <p>The source can be found on my GitHub.</p>
+                <ul>
+                    <li><a href = "https://www.facebook.com/doorean"><i class = "fa fa-facebook"></i></a></li>
+                    <li><a href = "https://www.linkedin.com/in/darian-chang/"><i class = "fa fa-linkedin"></i></a></li>
+                    <li><a href = "https://github.com/changmeister"><i class = "fa fa-github"></i></a></li>
+                </ul>
             </div>
         </div>
     </body>
