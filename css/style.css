@@ -5,6 +5,10 @@
     
 }
 
+html{
+    height: 100%;
+}
+
 h1{
     font-family: 'Poppins', sans-serif;
     font-size: 36px;
@@ -15,8 +19,8 @@ h2{
 }
 
 body{
-    /*background: #b9e1f8;*/
-    background: #A8D0E6;
+    background: #aec6cf;
+    min-height: 100%;
 }
 
 nav{
@@ -26,15 +30,16 @@ nav{
     min-height: 8vh;
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
-    background-color: white;
+    background-color: #faf5f2;
 }
 
 .box{
     width: 700px;
-    background: white;
+    background: #faf5f2;
     padding: 40px;
     margin: auto;
     margin-top: 5%;
+    margin-bottom: 5%;
     text-align: left;
     border-radius: 10px;
 }
@@ -56,7 +61,7 @@ nav{
 .nav-links a{
     text-decoration: none;
     color: black;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .nav-links a:hover{
@@ -185,41 +190,6 @@ nav{
     margin-right: auto;
 }
 
-.footer{
-    width: 100vw;
-    display: block;
-    overflow: hidden;
-    padding: 70px 0;
-    box-sizing: border-box;
-}
-
-.footer-description{
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-}
-
-.footer li{
-    list-style: none;
-    margin: 0 15px;
-}
-
-.footer ul{
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-}
-
-.footer ul li{
-    padding-top: 15px;
-    display: inline-block;
-}
-
-.footer ul li a{
-    color: black;
-    font-size: 25px;
-}
-
 .social-menu li{
     list-style: none;
     margin: 0 15px;
@@ -273,6 +243,50 @@ nav{
     background-color: #9932CC;
 }
 
+.footer{
+    background: #292838;
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box;
+}
+
+.footer-description{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #faf5f2;
+}
+
+.footer-description p{
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.footer li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.footer ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.footer ul li{
+    padding-top: 15px;
+    display: inline-block;
+}
+
+.footer ul li a{
+    color: #faf5f2;
+    font-size: 30px;
+}
+
+
+
 @media screen and (max-width:1024px){
     .nav-links{
         width: 60%;
@@ -288,6 +302,10 @@ nav{
         right: 0px;
         height: 92vh;
         top: 8vh;
+<<<<<<< Updated upstream
+=======
+        background-color: #faf5f2;
+>>>>>>> Stashed changes
         display: flex;
         flex-direction: column;
         align-items: center;
